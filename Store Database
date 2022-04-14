@@ -1,0 +1,30 @@
+
+
+CREATE TABLE clothing
+(id INTEGER PRIMARY KEY, 
+name TEXT,
+quantity INTEGER,
+price INTEGER, 
+color TEXT);
+
+INSERT INTO clothing VALUES
+(1, "jeans", 5, 30, "blue"),
+(2, "top", 6, 15, "pink"),
+(3, "dress", 5, 15, "white"),
+(4, "skirt", 3, 15, "green"),
+(5, "sandals", 10, 15, "black"),
+(6, "boots", 8, 15, "brown"),
+(7, "hat", 7, 15, "nude"),
+(8, "bikini", 4, 15, "pink"),
+(9, "bag", 3, 15, "nude"),
+(10, "leggings", 2, 15, "blue"),
+(11, "crop top", 1, 15, "white"),
+(12, "sports bra", 4, 15, "yellow"),
+(13, "sneakers", 3, 15, "white"),
+(14, "scarf", 6, 15, "black"),
+(15, "socks", 9, 15, "grey");
+
+SELECT * FROM clothing
+ORDER BY price;
+
+SELECT SUM(quantity) AS total_items FROM clothing;
